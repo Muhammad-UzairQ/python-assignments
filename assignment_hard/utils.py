@@ -15,7 +15,7 @@ def get_list_from_file(file_name):
         reader = csv.reader(file)
         # Optionally, skip the header row if present
         header = next(reader)
-        print(f"Header: {header}")
+        # print(f"Header: {header}")
         # Iterate over each row in the CSV file
         words_list = []
         for row in reader:

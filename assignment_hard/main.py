@@ -12,17 +12,17 @@ copied_word = list(word)
 guessed_word_list = ["_"] * len(word)
 
 print("Welcome to Hangman!")
-print("You will be Guessing the word, total 6 Wrong Guesses allowed.")
+print("You will be Guessing the word, total 8 Wrong Guesses allowed.")
 print("Good luck!")
 hangman(WRONG_GUESSES)
 print(' '.join(guessed_word_list))
 
 while True:
     if WRONG_GUESSES == WRONG_GUESSES_ALLOWED:
-        print("You lose! The word was", ' '.join(word))
+        print("You lose! The word was", ''.join(word))
         break
     elif guessed_word_list == word:
-        print("You won! The word was", ' '.join(word))
+        print("You won! The word was", ''.join(word))
         break
     else:
         guess = input("Guess a letter: ")
